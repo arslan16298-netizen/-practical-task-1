@@ -173,27 +173,24 @@
       <h2 class="modal__title" id="callback-dialog-title">Заказать обратный звонок</h2>
       <p class="modal__text">Консультант перезвонит в рабочее время.</p>
 
-      <form class="order-form" id="callback-form" method="post" data-validate data-success="callback-success">
+      <form class="order-form" id="callback-form" method="post" data-success="callback-success">
         <fieldset class="order-form__group">
           <legend class="visually-hidden">Контактные данные</legend>
           <div class="order-form__field">
             <label class="order-form__label" for="callback-name">Имя <span class="order-form__required" aria-hidden="true">*</span></label>
-            <input class="order-form__input" type="text" id="callback-name" name="name" autocomplete="name" minlength="2" required aria-describedby="callback-name-error">
-            <p class="order-form__error" id="callback-name-error" aria-live="polite"></p>
+            <input class="order-form__input" type="text" id="callback-name" name="name" autocomplete="name" minlength="2" required>
           </div>
           <div class="order-form__field">
             <label class="order-form__label" for="callback-phone">Телефон <span class="order-form__required" aria-hidden="true">*</span></label>
-            <input class="order-form__input" type="tel" id="callback-phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 900 000-00-00" pattern="\+?[0-9\s\-\(\)]{10,18}" data-pattern-message="Введите номер из 10–11 цифр, например +7 900 000-00-00." required aria-describedby="callback-phone-error">
-            <p class="order-form__error" id="callback-phone-error" aria-live="polite"></p>
+            <input class="order-form__input" type="tel" id="callback-phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 900 000-00-00" pattern="\+?[0-9\s\-\(\)]{10,18}" title="Введите номер из 10–11 цифр, например +7 900 000-00-00." required>
           </div>
         </fieldset>
 
         <div class="order-form__field">
           <label class="order-form__checkbox" for="callback-agreement">
-            <input type="checkbox" id="callback-agreement" name="agreement" required aria-describedby="callback-agreement-error">
+            <input type="checkbox" id="callback-agreement" name="agreement" required>
             <span>Согласен на обработку персональных данных <span class="order-form__required" aria-hidden="true">*</span></span>
           </label>
-          <p class="order-form__error" id="callback-agreement-error" aria-live="polite"></p>
         </div>
 
         <div class="order-form__actions">

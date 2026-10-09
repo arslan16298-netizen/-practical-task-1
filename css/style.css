@@ -1,21 +1,3 @@
-/* ==========================================================
-   «Разъём» — магазин электроники. Контрольная работа №1.
-   Структура файла:
-   1. Переменные
-   2. Базовые стили
-   3. Общие компоненты: контейнер, кнопки, заголовки секций
-   4. Шапка и навигация
-   5. Хлебные крошки
-   6. Главная: hero, преимущества, разделы, отзывы, FAQ, контакты
-   7. Карточка товара (product-card)
-   8. Каталог и фильтры
-   9. Страница товара и таблицы
-   10. Формы
-   11. Модальные окна
-   12. Страница контактов
-   13. Подвал и кнопка «Наверх»
-   14. Адаптивность
-   ========================================================== */
 
 /* ---------- 1. Переменные ---------- */
 
@@ -1271,19 +1253,9 @@ textarea.order-form__input {
   color: var(--color-text-muted);
 }
 
-.order-form__error {
-  margin: 0;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--color-danger);
-}
-
-.order-form__error:empty {
-  display: none;
-}
-
-/* Поле с ошибкой: aria-invalid выставляет js/main.js */
-.order-form__input[aria-invalid="true"] {
+/* Поле с ошибкой: :user-invalid срабатывает после того, как пользователь
+   изменил поле или попытался отправить форму, а не сразу при загрузке */
+.order-form__input:user-invalid {
   background-color: var(--color-danger-light);
   border-color: var(--color-danger);
 }
@@ -1338,7 +1310,7 @@ textarea.order-form__input {
   accent-color: var(--color-primary);
 }
 
-.order-form__checkbox input[aria-invalid="true"] {
+.order-form__checkbox input:user-invalid {
   outline: 2px solid var(--color-danger);
   outline-offset: 2px;
 }
