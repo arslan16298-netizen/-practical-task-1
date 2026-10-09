@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Карточка товара — Разъём</title>
+  <meta name="description" content="Подробное описание, характеристики и цена товара в магазине электроники «Разъём». Оформите заказ с доставкой на следующий день.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a class="site-header__logo logo" href="index.html" aria-label="Разъём, на главную">
+        <img class="logo__mark" src="images/logo.svg" alt="" width="30" height="30">
+        <span class="logo__text">Разъём</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Основное меню">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Оформить заказ</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a class="site-header__phone" href="tel:+74950000000">+7&nbsp;(495)&nbsp;000&#8209;00&#8209;00</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="product-page container">
+      <!--
+        Все товары каталога размещены на одной странице.
+        CSS показывает тот, чей id указан после # в адресе (псевдокласс :target),
+        например product.html#klavo-75. Без якоря показывается первый товар.
+      -->
+      <article class="product-detail product-detail--default" id="sona-h7" aria-labelledby="sona-h7-title">
+      <nav class="breadcrumbs" aria-label="Sona H7">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html?category=audio">Аудио</a></li>
+          <li class="breadcrumbs__item" aria-current="page">Sona H7</li>
+        </ol>
+      </nav>
+
+        <div class="product-detail__top">
+          <div class="product-detail__gallery">
+            <span class="product-card__badge product-card__badge--hit">Хит</span>
+            <img src="images/headphones.svg" alt="Полноразмерные наушники Sona H7 графитового цвета" width="480" height="360">
+          </div>
+
+          <div class="product-detail__summary">
+            <p class="product-detail__category">Аудио</p>
+            <h1 id="sona-h7-title">Наушники Sona H7</h1>
+            <p class="product-detail__price">12&nbsp;990&nbsp;₽</p>
+            <p class="product-detail__stock">В наличии, доставка завтра</p>
+            <p class="product-detail__lead">Закрытые наушники для дороги и офиса: шумоподавление глушит гул метро, а мягкие амбушюры не давят даже после нескольких часов.</p>
+            <ul class="product-detail__features">
+              <li class="product-detail__feature">Активное шумоподавление с тремя режимами, включая прозрачный</li>
+              <li class="product-detail__feature">Подключение к двум устройствам сразу: ноутбуку и телефону</li>
+              <li class="product-detail__feature">10 минут зарядки дают 5 часов музыки</li>
+              <li class="product-detail__feature">Складываются в жёсткий чехол из комплекта</li>
+            </ul>
+            <div class="button-group">
+              <a class="button" href="order.html?product=sona-h7">Оформить заказ</a>
+              <a class="button button--secondary" href="catalog.html">Вернуться в каталог</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-detail__info">
+          <section class="product-detail__description" aria-labelledby="sona-h7-about sona-h7-title">
+            <h2 id="sona-h7-about">Описание</h2>
+            <p>Sona H7 рассчитаны на долгие поездки и рабочий день в шумном офисе. Три микрофона на каждой чашке слушают окружающий шум и гасят его, а в прозрачном режиме вы слышите объявления на вокзале, не снимая наушники.</p>
+            <p>Мы проверили заявленную автономность: с включённым шумоподавлением наушники проработали 31 час на средней громкости.</p>
+          </section>
+
+          <table class="spec-table">
+            <caption class="spec-table__caption">Характеристики Sona H7</caption>
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <th scope="row">Тип</th>
+                  <td>Полноразмерные, закрытые</td>
+                </tr>
+                <tr>
+                  <th scope="row">Подключение</th>
+                  <td>Bluetooth 5.3, кабель 3,5 мм</td>
+                </tr>
+                <tr>
+                  <th scope="row">Шумоподавление</th>
+                  <td>Активное, 3 режима</td>
+                </tr>
+                <tr>
+                  <th scope="row">Время работы</th>
+                  <td>До 40 ч, с шумоподавлением до 30 ч</td>
+                </tr>
+                <tr>
+                  <th scope="row">Зарядка</th>
+                  <td>USB-C, быстрая зарядка</td>
+                </tr>
+                <tr>
+                  <th scope="row">Вес</th>
+                  <td>250 г</td>
+                </tr>
+                <tr>
+                  <th scope="row">Комплект</th>
+                  <td>Чехол, кабель USB-C, кабель 3,5 мм</td>
+                </tr>
+                <tr>
+                  <th scope="row">Гарантия</th>
+                  <td>12 месяцев</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="product-detail" id="sona-go" aria-labelledby="sona-go-title">
+      <nav class="breadcrumbs" aria-label="Sona Go">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html?category=audio">Аудио</a></li>
+          <li class="breadcrumbs__item" aria-current="page">Sona Go</li>
+        </ol>
+      </nav>
+
+        <div class="product-detail__top">
+          <div class="product-detail__gallery">
+            <span class="product-card__badge product-card__badge--sale">Скидка</span>
+            <img src="images/speaker.svg" alt="Портативная колонка Sona Go с ремешком" width="480" height="360">
+          </div>
+
+          <div class="product-detail__summary">
+            <p class="product-detail__category">Аудио</p>
+            <h1 id="sona-go-title">Колонка Sona Go</h1>
+            <p class="product-detail__price product-detail__price--sale">5&nbsp;490&nbsp;₽ <s class="product-detail__old-price"><span class="visually-hidden">Старая цена: </span>6&nbsp;990&nbsp;₽</s></p>
+            <p class="product-detail__stock">В наличии, доставка завтра</p>
+            <p class="product-detail__lead">Колонка, которую не страшно взять на пляж: выдерживает погружение в воду и падение со стола.</p>
+            <ul class="product-detail__features">
+              <li class="product-detail__feature">Защита IP67 от воды и пыли</li>
+              <li class="product-detail__feature">До 16 часов работы</li>
+              <li class="product-detail__feature">Две колонки объединяются в стереопару</li>
+              <li class="product-detail__feature">Ремешок крепится к рулю или лямке рюкзака</li>
+            </ul>
+            <div class="button-group">
+              <a class="button" href="order.html?product=sona-go">Оформить заказ</a>
+              <a class="button button--secondary" href="catalog.html">Вернуться в каталог</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-detail__info">
+          <section class="product-detail__description" aria-labelledby="sona-go-about sona-go-title">
+            <h2 id="sona-go-about">Описание</h2>
+            <p>Sona Go весит чуть больше полкилограмма и звучит громче, чем ожидаешь от такого размера. Корпус покрыт мягким пластиком, который не скользит по столу и не боится царапин.</p>
+            <p>Скидка действует до конца месяца или пока товар есть на складе.</p>
+          </section>
+
+          <table class="spec-table">
+            <caption class="spec-table__caption">Характеристики Sona Go</caption>
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <th scope="row">Мощность</th>
+                  <td>20 Вт</td>
+                </tr>
+                <tr>
+                  <th scope="row">Частотный диапазон</th>
+                  <td>60 Гц – 20 кГц</td>
+                </tr>
+                <tr>
+                  <th scope="row">Защита</th>
+                  <td>IP67</td>
+                </tr>
+                <tr>
+                  <th scope="row">Время работы</th>
+                  <td>До 16 ч</td>
+                </tr>
+                <tr>
+                  <th scope="row">Подключение</th>
+                  <td>Bluetooth 5.3</td>
+                </tr>
+                <tr>
+                  <th scope="row">Вес</th>
+                  <td>540 г</td>
+                </tr>
+                <tr>
+                  <th scope="row">Гарантия</th>
+                  <td>12 месяцев</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="product-detail" id="klavo-75" aria-labelledby="klavo-75-title">
+      <nav class="breadcrumbs" aria-label="Klavo 75">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html?category=peripherals">Периферия</a></li>
+          <li class="breadcrumbs__item" aria-current="page">Klavo 75</li>
+        </ol>
+      </nav>
+
+        <div class="product-detail__top">
+          <div class="product-detail__gallery">
+            <span class="product-card__badge product-card__badge--new">Новинка</span>
+            <img src="images/keyboard.svg" alt="Механическая клавиатура Klavo 75 в тёмном корпусе" width="480" height="360">
+          </div>
+
+          <div class="product-detail__summary">
+            <p class="product-detail__category">Периферия</p>
+            <h1 id="klavo-75-title">Клавиатура Klavo 75</h1>
+            <p class="product-detail__price">8&nbsp;990&nbsp;₽</p>
+            <p class="product-detail__stock">В наличии, доставка завтра</p>
+            <p class="product-detail__lead">Компактная механика без цифрового блока: на столе остаётся место для мыши, а стрелки и ряд F-клавиш на своих местах.</p>
+            <ul class="product-detail__features">
+              <li class="product-detail__feature">Переключатели меняются без пайки</li>
+              <li class="product-detail__feature">Три способа подключения: кабель, Bluetooth и радиоканал</li>
+              <li class="product-detail__feature">Русские и английские буквы нанесены гравировкой</li>
+              <li class="product-detail__feature">Регулируемая белая подсветка</li>
+            </ul>
+            <div class="button-group">
+              <a class="button" href="order.html?product=klavo-75">Оформить заказ</a>
+              <a class="button button--secondary" href="catalog.html">Вернуться в каталог</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-detail__info">
+          <section class="product-detail__description" aria-labelledby="klavo-75-about klavo-75-title">
+            <h2 id="klavo-75-about">Описание</h2>
+            <p>Klavo 75 подойдёт и для работы с текстом, и для игр. Линейные переключатели нажимаются плавно и тихо, а если захочется другой отклик, их можно заменить за пару минут прямо из коробки.</p>
+            <p>Клавиатура запоминает до трёх устройств и переключается между ними сочетанием клавиш.</p>
+          </section>
+
+          <table class="spec-table">
+            <caption class="spec-table__caption">Характеристики Klavo 75</caption>
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <th scope="row">Формат</th>
+                  <td>75%, 84 клавиши</td>
+                </tr>
+                <tr>
+                  <th scope="row">Переключатели</th>
+                  <td>Линейные, горячая замена</td>
+                </tr>
+                <tr>
+                  <th scope="row">Подключение</th>
+                  <td>USB-C, Bluetooth 5.1, радиоканал 2,4 ГГц</td>
+                </tr>
+                <tr>
+                  <th scope="row">Аккумулятор</th>
+                  <td>4000 мА·ч</td>
+                </tr>
+                <tr>
+                  <th scope="row">Раскладка</th>
+                  <td>Русская и английская</td>
+                </tr>
+                <tr>
+                  <th scope="row">Вес</th>
+                  <td>820 г</td>
+                </tr>
+                <tr>
+                  <th scope="row">Гарантия</th>
+                  <td>12 месяцев</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="product-detail" id="trek-m2" aria-labelledby="trek-m2-title">
+      <nav class="breadcrumbs" aria-label="Trek M2">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html?category=peripherals">Периферия</a></li>
+          <li class="breadcrumbs__item" aria-current="page">Trek M2</li>
+        </ol>
+      </nav>
+
+        <div class="product-detail__top">
+          <div class="product-detail__gallery">
+            <img src="images/mouse.svg" alt="Беспроводная мышь Trek M2 чёрного цвета" width="480" height="360">
+          </div>
+
+          <div class="product-detail__summary">
+            <p class="product-detail__category">Периферия</p>
+            <h1 id="trek-m2-title">Мышь Trek M2</h1>
+            <p class="product-detail__price">3&nbsp;290&nbsp;₽</p>
+            <p class="product-detail__stock">В наличии, доставка завтра</p>
+            <p class="product-detail__lead">Мышь для долгой работы: симметричная форма подходит для любой руки, а тихие кнопки не мешают соседям по офису.</p>
+            <ul class="product-detail__features">
+              <li class="product-detail__feature">Вес 62 г: рука не устаёт к вечеру</li>
+              <li class="product-detail__feature">Тихие основные кнопки</li>
+              <li class="product-detail__feature">До 70 часов от одной зарядки</li>
+              <li class="product-detail__feature">Точный датчик до 26 000 DPI</li>
+            </ul>
+            <div class="button-group">
+              <a class="button" href="order.html?product=trek-m2">Оформить заказ</a>
+              <a class="button button--secondary" href="catalog.html">Вернуться в каталог</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-detail__info">
+          <section class="product-detail__description" aria-labelledby="trek-m2-about trek-m2-title">
+            <h2 id="trek-m2-about">Описание</h2>
+            <p>Trek M2 работает через комплектный радиоприёмник или по Bluetooth. Две боковые кнопки можно настроить на «назад» и «вперёд» в браузере.</p>
+            <p>Колёсико с чёткими шагами помогает листать длинные таблицы без промахов.</p>
+          </section>
+
+          <table class="spec-table">
+            <caption class="spec-table__caption">Характеристики Trek M2</caption>
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <th scope="row">Датчик</th>
+                  <td>Оптический, до 26 000 DPI</td>
+                </tr>
+                <tr>
+                  <th scope="row">Подключение</th>
+                  <td>Радиоканал 2,4 ГГц, Bluetooth 5.0</td>
+                </tr>
+                <tr>
+                  <th scope="row">Кнопки</th>
+                  <td>6, основные — тихие</td>
+                </tr>
+                <tr>
+                  <th scope="row">Время работы</th>
+                  <td>До 70 ч</td>
+                </tr>
+                <tr>
+                  <th scope="row">Зарядка</th>
+                  <td>USB-C</td>
+                </tr>
+                <tr>
+                  <th scope="row">Вес</th>
+                  <td>62 г</td>
+                </tr>
+                <tr>
+                  <th scope="row">Гарантия</th>
+                  <td>12 месяцев</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="product-detail" id="lumo-2k" aria-labelledby="lumo-2k-title">
+      <nav class="breadcrumbs" aria-label="Lumo 2K">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html?category=peripherals">Периферия</a></li>
+          <li class="breadcrumbs__item" aria-current="page">Lumo 2K</li>
+        </ol>
+      </nav>
+
+        <div class="product-detail__top">
+          <div class="product-detail__gallery">
+            <span class="product-card__badge product-card__badge--out">Нет в наличии</span>
+            <img src="images/webcam.svg" alt="Веб-камера Lumo 2K на креплении для монитора" width="480" height="360">
+          </div>
+
+          <div class="product-detail__summary">
+            <p class="product-detail__category">Периферия</p>
+            <h1 id="lumo-2k-title">Веб-камера Lumo 2K</h1>
+            <p class="product-detail__price">4&nbsp;790&nbsp;₽</p>
+            <p class="product-detail__stock product-detail__stock--out">Нет в наличии</p>
+            <p class="product-detail__lead">Чёткая картинка на созвонах даже в полутёмной комнате. Шторка закрывает объектив, когда камера не нужна.</p>
+            <ul class="product-detail__features">
+              <li class="product-detail__feature">Разрешение 2560×1440 при 30 кадрах в секунду</li>
+              <li class="product-detail__feature">Автофокус и коррекция освещения</li>
+              <li class="product-detail__feature">Два микрофона с шумоподавлением</li>
+              <li class="product-detail__feature">Механическая шторка объектива</li>
+            </ul>
+            <div class="button-group">
+              <button class="button" type="button" disabled>Нет в наличии</button>
+              <a class="button button--secondary" href="order.html?product=lumo-2k">Сообщить о поступлении</a>
+            </div>
+            <p class="product-detail__note">Ожидаем поставку в течение месяца.</p>
+          </div>
+        </div>
+
+        <div class="product-detail__info">
+          <section class="product-detail__description" aria-labelledby="lumo-2k-about lumo-2k-title">
+            <h2 id="lumo-2k-about">Описание</h2>
+            <p>Lumo 2K крепится на монитор или ноутбук и не требует драйверов: достаточно подключить кабель.</p>
+            <p>Камеры сейчас нет на складе. Оставьте заявку с темой «Lumo 2K», и мы сообщим, когда она поступит.</p>
+          </section>
+
+          <table class="spec-table">
+            <caption class="spec-table__caption">Характеристики Lumo 2K</caption>
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <th scope="row">Разрешение</th>
+                  <td>2560 × 1440, 30 кадров/с</td>
+                </tr>
+                <tr>
+                  <th scope="row">Угол обзора</th>
+                  <td>90°</td>
+                </tr>
+                <tr>
+                  <th scope="row">Фокус</th>
+                  <td>Автоматический</td>
+                </tr>
+                <tr>
+                  <th scope="row">Микрофоны</th>
+                  <td>2, стерео</td>
+                </tr>
+                <tr>
+                  <th scope="row">Подключение</th>
+                  <td>USB-C, кабель 1,5 м</td>
+                </tr>
+                <tr>
+                  <th scope="row">Крепление</th>
+                  <td>На монитор или штатив</td>
+                </tr>
+                <tr>
+                  <th scope="row">Гарантия</th>
+                  <td>12 месяцев</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="product-detail" id="vista-27" aria-labelledby="vista-27-title">
+      <nav class="breadcrumbs" aria-label="Vista 27">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html?category=monitors">Мониторы</a></li>
+          <li class="breadcrumbs__item" aria-current="page">Vista 27</li>
+        </ol>
+      </nav>
+
+        <div class="product-detail__top">
+          <div class="product-detail__gallery">
+            <span class="product-card__badge product-card__badge--hit">Хит</span>
+            <img src="images/monitor.svg" alt="Монитор Vista 27 QHD на подставке" width="480" height="360">
+          </div>
+
+          <div class="product-detail__summary">
+            <p class="product-detail__category">Мониторы</p>
+            <h1 id="vista-27-title">Монитор Vista 27 QHD</h1>
+            <p class="product-detail__price">24&nbsp;990&nbsp;₽</p>
+            <p class="product-detail__stock">В наличии, доставка завтра</p>
+            <p class="product-detail__lead">Один кабель USB-C передаёт изображение и заряжает ноутбук, поэтому на столе меньше проводов.</p>
+            <ul class="product-detail__features">
+              <li class="product-detail__feature">IPS-матрица 2560×1440 с частотой 165 Гц</li>
+              <li class="product-detail__feature">USB-C с зарядкой ноутбука до 65 Вт</li>
+              <li class="product-detail__feature">Подставка регулируется по высоте и наклону</li>
+              <li class="product-detail__feature">Охват цветового пространства sRGB 99%</li>
+            </ul>
+            <div class="button-group">
+              <a class="button" href="order.html?product=vista-27">Оформить заказ</a>
+              <a class="button button--secondary" href="catalog.html">Вернуться в каталог</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-detail__info">
+          <section class="product-detail__description" aria-labelledby="vista-27-about vista-27-title">
+            <h2 id="vista-27-about">Описание</h2>
+            <p>Vista 27 одинаково хорош для таблиц, монтажа и игр. Разрешение QHD на 27 дюймах даёт чёткий текст без масштабирования.</p>
+            <p>В комплекте кабели USB-C и HDMI, так что подключить его можно сразу после распаковки.</p>
+          </section>
+
+          <table class="spec-table">
+            <caption class="spec-table__caption">Характеристики Vista 27</caption>
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <th scope="row">Диагональ</th>
+                  <td>27″</td>
+                </tr>
+                <tr>
+                  <th scope="row">Матрица</th>
+                  <td>IPS, 2560 × 1440</td>
+                </tr>
+                <tr>
+                  <th scope="row">Частота обновления</th>
+                  <td>165 Гц</td>
+                </tr>
+                <tr>
+                  <th scope="row">Время отклика</th>
+                  <td>1 мс</td>
+                </tr>
+                <tr>
+                  <th scope="row">Разъёмы</th>
+                  <td>USB-C (65 Вт), 2 × HDMI 2.0, DisplayPort 1.4</td>
+                </tr>
+                <tr>
+                  <th scope="row">Подставка</th>
+                  <td>Высота, наклон, поворот</td>
+                </tr>
+                <tr>
+                  <th scope="row">Гарантия</th>
+                  <td>24 месяца</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="product-detail" id="cell-20000" aria-labelledby="cell-20000-title">
+      <nav class="breadcrumbs" aria-label="Cell 20000">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html?category=power">Питание</a></li>
+          <li class="breadcrumbs__item" aria-current="page">Cell 20000</li>
+        </ol>
+      </nav>
+
+        <div class="product-detail__top">
+          <div class="product-detail__gallery">
+            <span class="product-card__badge product-card__badge--sale">Скидка</span>
+            <img src="images/powerbank.svg" alt="Внешний аккумулятор Cell 20000 с индикатором заряда" width="480" height="360">
+          </div>
+
+          <div class="product-detail__summary">
+            <p class="product-detail__category">Питание</p>
+            <h1 id="cell-20000-title">Внешний аккумулятор Cell 20000</h1>
+            <p class="product-detail__price product-detail__price--sale">3&nbsp;990&nbsp;₽ <s class="product-detail__old-price"><span class="visually-hidden">Старая цена: </span>4&nbsp;990&nbsp;₽</s></p>
+            <p class="product-detail__stock">В наличии, доставка завтра</p>
+            <p class="product-detail__lead">Аккумулятор, который заряжает не только телефон, но и ноутбук с USB-C. Его можно брать в ручную кладь.</p>
+            <ul class="product-detail__features">
+              <li class="product-detail__feature">Ёмкость 20 000 мА·ч: 4 полных заряда смартфона</li>
+              <li class="product-detail__feature">Мощность до 45 Вт на порту USB-C</li>
+              <li class="product-detail__feature">Три устройства одновременно</li>
+              <li class="product-detail__feature">Индикатор оставшегося заряда</li>
+            </ul>
+            <div class="button-group">
+              <a class="button" href="order.html?product=cell-20000">Оформить заказ</a>
+              <a class="button button--secondary" href="catalog.html">Вернуться в каталог</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-detail__info">
+          <section class="product-detail__description" aria-labelledby="cell-20000-about cell-20000-title">
+            <h2 id="cell-20000-about">Описание</h2>
+            <p>Cell 20000 сам заряжается примерно за два с половиной часа от адаптера на 45 Вт. Корпус покрыт матовым пластиком и не собирает отпечатки.</p>
+            <p>Ёмкость 74 Вт·ч укладывается в правила авиакомпаний для ручной клади.</p>
+          </section>
+
+          <table class="spec-table">
+            <caption class="spec-table__caption">Характеристики Cell 20000</caption>
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <th scope="row">Ёмкость</th>
+                  <td>20 000 мА·ч (74 Вт·ч)</td>
+                </tr>
+                <tr>
+                  <th scope="row">Мощность</th>
+                  <td>До 45 Вт</td>
+                </tr>
+                <tr>
+                  <th scope="row">Порты</th>
+                  <td>2 × USB-C, USB-A</td>
+                </tr>
+                <tr>
+                  <th scope="row">Время зарядки</th>
+                  <td>Около 2,5 ч</td>
+                </tr>
+                <tr>
+                  <th scope="row">Вес</th>
+                  <td>360 г</td>
+                </tr>
+                <tr>
+                  <th scope="row">Гарантия</th>
+                  <td>12 месяцев</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="product-detail" id="gan-65" aria-labelledby="gan-65-title">
+      <nav class="breadcrumbs" aria-label="Volt GaN 65">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html?category=power">Питание</a></li>
+          <li class="breadcrumbs__item" aria-current="page">Volt GaN 65</li>
+        </ol>
+      </nav>
+
+        <div class="product-detail__top">
+          <div class="product-detail__gallery">
+            <span class="product-card__badge product-card__badge--new">Новинка</span>
+            <img src="images/charger.svg" alt="Сетевое зарядное устройство Volt GaN 65 белого цвета" width="480" height="360">
+          </div>
+
+          <div class="product-detail__summary">
+            <p class="product-detail__category">Питание</p>
+            <h1 id="gan-65-title">Зарядное устройство Volt GaN 65</h1>
+            <p class="product-detail__price">2&nbsp;790&nbsp;₽</p>
+            <p class="product-detail__stock">В наличии, доставка завтра</p>
+            <p class="product-detail__lead">Одна зарядка вместо трёх: ноутбук, телефон и наушники заряжаются одновременно от одной розетки.</p>
+            <ul class="product-detail__features">
+              <li class="product-detail__feature">Мощность 65 Вт на одном порту</li>
+              <li class="product-detail__feature">Три порта: 2 × USB-C и USB-A</li>
+              <li class="product-detail__feature">Нитрид галлия: в два раза меньше обычного блока</li>
+              <li class="product-detail__feature">Защита от перегрева и короткого замыкания</li>
+            </ul>
+            <div class="button-group">
+              <a class="button" href="order.html?product=gan-65">Оформить заказ</a>
+              <a class="button button--secondary" href="catalog.html">Вернуться в каталог</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-detail__info">
+          <section class="product-detail__description" aria-labelledby="gan-65-about gan-65-title">
+            <h2 id="gan-65-about">Описание</h2>
+            <p>Volt GaN 65 помещается в карман куртки. Если подключено несколько устройств, мощность распределяется автоматически.</p>
+            <p>Подходит для большинства ноутбуков с зарядкой через USB-C.</p>
+          </section>
+
+          <table class="spec-table">
+            <caption class="spec-table__caption">Характеристики Volt GaN 65</caption>
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <th scope="row">Мощность</th>
+                  <td>65 Вт максимум</td>
+                </tr>
+                <tr>
+                  <th scope="row">Порты</th>
+                  <td>2 × USB-C, USB-A</td>
+                </tr>
+                <tr>
+                  <th scope="row">Технология</th>
+                  <td>GaN (нитрид галлия)</td>
+                </tr>
+                <tr>
+                  <th scope="row">Защита</th>
+                  <td>От перегрева, перегрузки и замыкания</td>
+                </tr>
+                <tr>
+                  <th scope="row">Размер</th>
+                  <td>52 × 52 × 30 мм</td>
+                </tr>
+                <tr>
+                  <th scope="row">Гарантия</th>
+                  <td>12 месяцев</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <article class="product-detail" id="port-7" aria-labelledby="port-7-title">
+      <nav class="breadcrumbs" aria-label="Port 7">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html">Каталог</a></li>
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="catalog.html?category=peripherals">Периферия</a></li>
+          <li class="breadcrumbs__item" aria-current="page">Port 7</li>
+        </ol>
+      </nav>
+
+        <div class="product-detail__top">
+          <div class="product-detail__gallery">
+            <img src="images/hub.svg" alt="USB-C хаб Port 7 в 1 в алюминиевом корпусе" width="480" height="360">
+          </div>
+
+          <div class="product-detail__summary">
+            <p class="product-detail__category">Периферия</p>
+            <h1 id="port-7-title">USB-C хаб Port 7 в 1</h1>
+            <p class="product-detail__price">3&nbsp;490&nbsp;₽</p>
+            <p class="product-detail__stock">В наличии, доставка завтра</p>
+            <p class="product-detail__lead">Превращает один порт USB-C ноутбука в рабочее место: монитор, флешки, карта памяти и зарядка через один кабель.</p>
+            <ul class="product-detail__features">
+              <li class="product-detail__feature">HDMI 4K при 60 Гц</li>
+              <li class="product-detail__feature">Три порта USB-A 3.0</li>
+              <li class="product-detail__feature">Кардридер SD и microSD</li>
+              <li class="product-detail__feature">Проброс зарядки до 100 Вт</li>
+            </ul>
+            <div class="button-group">
+              <a class="button" href="order.html?product=port-7">Оформить заказ</a>
+              <a class="button button--secondary" href="catalog.html">Вернуться в каталог</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-detail__info">
+          <section class="product-detail__description" aria-labelledby="port-7-about port-7-title">
+            <h2 id="port-7-about">Описание</h2>
+            <p>Port 7 в алюминиевом корпусе отводит тепло и не нагревается при долгой работе. Кабель длиной 20 см не натягивается, если ноутбук стоит на подставке.</p>
+            <p>Хаб работает без драйверов в Windows, macOS и Linux.</p>
+          </section>
+
+          <table class="spec-table">
+            <caption class="spec-table__caption">Характеристики Port 7</caption>
+            <thead>
+              <tr>
+                <th scope="col">Параметр</th>
+                <th scope="col">Значение</th>
+              </tr>
+            </thead>
+            <tbody>
+                <tr>
+                  <th scope="row">Видео</th>
+                  <td>HDMI 4K, 60 Гц</td>
+                </tr>
+                <tr>
+                  <th scope="row">USB</th>
+                  <td>3 × USB-A 3.0</td>
+                </tr>
+                <tr>
+                  <th scope="row">Карты памяти</th>
+                  <td>SD, microSD</td>
+                </tr>
+                <tr>
+                  <th scope="row">Зарядка</th>
+                  <td>USB-C Power Delivery до 100 Вт</td>
+                </tr>
+                <tr>
+                  <th scope="row">Корпус</th>
+                  <td>Алюминий</td>
+                </tr>
+                <tr>
+                  <th scope="row">Гарантия</th>
+                  <td>12 месяцев</td>
+                </tr>
+            </tbody>
+          </table>
+        </div>
+      </article>
+
+      <aside class="product-page__aside" aria-labelledby="delivery-title">
+        <div>
+          <h2 id="delivery-title">Доставка и гарантия</h2>
+          <p>Оплата при получении картой или наличными. Перед оплатой можно проверить комплект и внешний вид товара.</p>
+          <p>Гарантийный ремонт выполняем в собственном сервисе. Вопросы о товаре задайте по телефону <a href="tel:+74950000000">+7&nbsp;(495)&nbsp;000&#8209;00&#8209;00</a> или на странице <a href="contacts.html">контактов</a>.</p>
+        </div>
+
+        <table class="spec-table">
+          <caption class="spec-table__caption">Способы получения</caption>
+          <thead>
+            <tr>
+              <th scope="col">Способ</th>
+              <th scope="col">Срок</th>
+              <th scope="col">Стоимость</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Курьер по Москве</th>
+              <td>На следующий день</td>
+              <td>290&nbsp;₽, от 5&nbsp;000&nbsp;₽ бесплатно</td>
+            </tr>
+            <tr>
+              <th scope="row">Самовывоз из шоурума</th>
+              <td>Через 2 часа после звонка</td>
+              <td>Бесплатно</td>
+            </tr>
+            <tr>
+              <th scope="row">Транспортная компания</th>
+              <td>2–5 дней</td>
+              <td>По тарифу перевозчика</td>
+            </tr>
+          </tbody>
+        </table>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner container">
+      <div class="site-footer__brand">
+        <a class="logo" href="index.html" aria-label="Разъём, на главную">
+          <img class="logo__mark" src="images/logo.svg" alt="" width="30" height="30">
+          <span class="logo__text">Разъём</span>
+        </a>
+        <p class="site-footer__about">Электроника и компьютерные аксессуары, которые мы проверили перед продажей.</p>
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Страницы сайта">
+        <h2 class="site-footer__title">Страницы</h2>
+        <ul class="site-footer__list">
+          <li><a class="site-footer__link" href="index.html">Главная</a></li>
+          <li><a class="site-footer__link" href="catalog.html">Каталог</a></li>
+          <li><a class="site-footer__link" href="product.html">Товар недели</a></li>
+          <li><a class="site-footer__link" href="order.html">Оформить заказ</a></li>
+          <li><a class="site-footer__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <nav class="site-footer__nav" aria-label="Разделы главной страницы">
+        <h2 class="site-footer__title">На главной</h2>
+        <ul class="site-footer__list">
+          <li><a class="site-footer__link" href="index.html#advantages">Преимущества</a></li>
+          <li><a class="site-footer__link" href="index.html#popular">Популярные товары</a></li>
+          <li><a class="site-footer__link" href="index.html#reviews">Отзывы</a></li>
+          <li><a class="site-footer__link" href="index.html#faq">Вопросы и ответы</a></li>
+          <li><a class="site-footer__link" href="index.html#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2 class="site-footer__title">Связаться</h2>
+        <address class="site-footer__address">
+          <a href="tel:+74950000000">+7&nbsp;(495)&nbsp;000&#8209;00&#8209;00</a>
+          <a href="mailto:hello@razyom.example">hello@razyom.example</a>
+          <span>Москва, ул. Примерная, 1</span>
+        </address>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom container">
+      <p>© 2026 «Разъём». Учебный проект: контрольная работа №1, Ахметгалиев А. А., ЭФБО-17-25. Магазин вымышленный, заказы не обрабатываются.</p>
+    </div>
+  </footer>
+
+  <a class="to-top" href="#top">↑ Наверх</a>
+</body>
+</html>

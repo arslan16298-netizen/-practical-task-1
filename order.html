@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Оформление заказа — Разъём</title>
+  <meta name="description" content="Форма заказа в магазине «Разъём»: выберите товар, способ получения и оставьте контакты для подтверждения.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a class="site-header__logo logo" href="index.html" aria-label="Разъём, на главную">
+        <img class="logo__mark" src="images/logo.svg" alt="" width="30" height="30">
+        <span class="logo__text">Разъём</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Основное меню">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="order.html" aria-current="page">Оформить заказ</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a class="site-header__phone" href="tel:+74950000000">+7&nbsp;(495)&nbsp;000&#8209;00&#8209;00</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Оформление заказа">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item" aria-current="page">Оформление заказа</li>
+        </ol>
+      </nav>
+
+      <header class="page-header">
+        <h1 class="page-header__title">Оформление заказа</h1>
+        <p class="page-header__lead">Заполните форму, и менеджер перезвонит, чтобы подтвердить заказ и время доставки.</p>
+      </header>
+
+      <div class="order-layout">
+        <section aria-labelledby="order-form-title">
+          <h2 class="visually-hidden" id="order-form-title">Форма заказа</h2>
+          <form class="order-form" id="order-form" method="post" data-validate data-success="order-success">
+            <p class="order-form__note">Поля, отмеченные <span class="order-form__required" aria-hidden="true">*</span>, обязательны для заполнения.</p>
+
+            <fieldset class="order-form__group">
+              <legend class="order-form__legend">Контактные данные</legend>
+
+              <div class="order-form__field order-form__field--wide">
+                <label class="order-form__label" for="order-name">Имя <span class="order-form__required" aria-hidden="true">*</span></label>
+                <input class="order-form__input" type="text" id="order-name" name="name" autocomplete="name" minlength="2" required aria-describedby="order-name-error">
+                <p class="order-form__error" id="order-name-error" aria-live="polite"></p>
+              </div>
+
+              <div class="order-form__field">
+                <label class="order-form__label" for="order-email">Электронная почта <span class="order-form__required" aria-hidden="true">*</span></label>
+                <input class="order-form__input" type="email" id="order-email" name="email" autocomplete="email" placeholder="name@mail.ru" required aria-describedby="order-email-error">
+                <p class="order-form__error" id="order-email-error" aria-live="polite"></p>
+              </div>
+
+              <div class="order-form__field">
+                <label class="order-form__label" for="order-phone">Телефон <span class="order-form__required" aria-hidden="true">*</span></label>
+                <input class="order-form__input" type="tel" id="order-phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 900 000-00-00" pattern="\+?[0-9\s\-\(\)]{10,18}" data-pattern-message="Введите номер из 10–11 цифр, например +7 900 000-00-00." required aria-describedby="order-phone-hint order-phone-error">
+                <p class="order-form__hint" id="order-phone-hint">Позвоним, чтобы подтвердить заказ.</p>
+                <p class="order-form__error" id="order-phone-error" aria-live="polite"></p>
+              </div>
+            </fieldset>
+
+            <fieldset class="order-form__group">
+              <legend class="order-form__legend">Заказ</legend>
+
+              <div class="order-form__field">
+                <label class="order-form__label" for="order-product">Товар или тема обращения <span class="order-form__required" aria-hidden="true">*</span></label>
+                <select class="order-form__input" id="order-product" name="product" required aria-describedby="order-product-error">
+                  <option value="">Выберите из списка</option>
+                  <optgroup label="Товары">
+                  <option value="sona-h7">Наушники Sona H7</option>
+                  <option value="sona-go">Колонка Sona Go</option>
+                  <option value="klavo-75">Клавиатура Klavo 75</option>
+                  <option value="trek-m2">Мышь Trek M2</option>
+                  <option value="lumo-2k">Веб-камера Lumo 2K (нет в наличии)</option>
+                  <option value="vista-27">Монитор Vista 27 QHD</option>
+                  <option value="cell-20000">Внешний аккумулятор Cell 20000</option>
+                  <option value="gan-65">Зарядное устройство Volt GaN 65</option>
+                  <option value="port-7">USB-C хаб Port 7 в 1</option>
+                  </optgroup>
+                  <optgroup label="Другое">
+                    <option value="consultation">Консультация по выбору</option>
+                    <option value="warranty">Гарантия и возврат</option>
+                  </optgroup>
+                </select>
+                <p class="order-form__error" id="order-product-error" aria-live="polite"></p>
+              </div>
+
+              <div class="order-form__field">
+                <label class="order-form__label" for="order-quantity">Количество</label>
+                <input class="order-form__input" type="number" id="order-quantity" name="quantity" min="1" max="10" value="1" aria-describedby="order-quantity-error">
+                <p class="order-form__error" id="order-quantity-error" aria-live="polite"></p>
+              </div>
+
+              <div class="order-form__field order-form__field--wide">
+                <span class="order-form__label" id="delivery-label">Способ получения</span>
+                <div class="order-form__choices" role="radiogroup" aria-labelledby="delivery-label">
+                  <label class="order-form__choice" for="delivery-courier">
+                    <input type="radio" id="delivery-courier" name="delivery" value="courier" checked>
+                    Курьер
+                  </label>
+                  <label class="order-form__choice" for="delivery-pickup">
+                    <input type="radio" id="delivery-pickup" name="delivery" value="pickup">
+                    Самовывоз
+                  </label>
+                  <label class="order-form__choice" for="delivery-transport">
+                    <input type="radio" id="delivery-transport" name="delivery" value="transport">
+                    Транспортная компания
+                  </label>
+                </div>
+              </div>
+
+              <div class="order-form__field order-form__field--wide">
+                <label class="order-form__label" for="order-comment">Комментарий</label>
+                <textarea class="order-form__input" id="order-comment" name="comment" rows="4" maxlength="500" placeholder="Адрес доставки, удобное время звонка или вопрос о товаре" aria-describedby="order-comment-hint"></textarea>
+                <p class="order-form__hint" id="order-comment-hint">До 500 символов.</p>
+              </div>
+            </fieldset>
+
+            <div class="order-form__field">
+              <label class="order-form__checkbox" for="order-agreement">
+                <input type="checkbox" id="order-agreement" name="agreement" required aria-describedby="order-agreement-error">
+                <span>Согласен на обработку персональных данных для связи по заказу <span class="order-form__required" aria-hidden="true">*</span></span>
+              </label>
+              <p class="order-form__error" id="order-agreement-error" aria-live="polite"></p>
+            </div>
+
+            <div class="order-form__actions">
+              <button class="button" type="submit">Отправить заявку</button>
+              <button class="button button--secondary" type="reset">Очистить форму</button>
+            </div>
+          </form>
+        </section>
+
+        <aside class="order-steps" aria-labelledby="order-steps-title">
+          <h2 id="order-steps-title">Что будет дальше</h2>
+          <ol class="order-steps__list">
+            <li class="order-steps__item">
+              <h3>Звонок менеджера</h3>
+              <p class="order-steps__text">В течение 30 минут в рабочее время подтвердим наличие и цену.</p>
+            </li>
+            <li class="order-steps__item">
+              <h3>Доставка</h3>
+              <p class="order-steps__text">Курьер привезёт заказ на следующий день или вы заберёте его в шоуруме.</p>
+            </li>
+            <li class="order-steps__item">
+              <h3>Оплата при получении</h3>
+              <p class="order-steps__text">Картой или наличными после проверки товара.</p>
+            </li>
+          </ol>
+          <p class="order-steps__help">Нужна помощь с выбором? <a href="contacts.html">Свяжитесь с нами</a></p>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner container">
+      <div class="site-footer__brand">
+        <a class="logo" href="index.html" aria-label="Разъём, на главную">
+          <img class="logo__mark" src="images/logo.svg" alt="" width="30" height="30">
+          <span class="logo__text">Разъём</span>
+        </a>
+        <p class="site-footer__about">Электроника и компьютерные аксессуары, которые мы проверили перед продажей.</p>
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Страницы сайта">
+        <h2 class="site-footer__title">Страницы</h2>
+        <ul class="site-footer__list">
+          <li><a class="site-footer__link" href="index.html">Главная</a></li>
+          <li><a class="site-footer__link" href="catalog.html">Каталог</a></li>
+          <li><a class="site-footer__link" href="product.html">Товар недели</a></li>
+          <li><a class="site-footer__link" href="order.html">Оформить заказ</a></li>
+          <li><a class="site-footer__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <nav class="site-footer__nav" aria-label="Разделы главной страницы">
+        <h2 class="site-footer__title">На главной</h2>
+        <ul class="site-footer__list">
+          <li><a class="site-footer__link" href="index.html#advantages">Преимущества</a></li>
+          <li><a class="site-footer__link" href="index.html#popular">Популярные товары</a></li>
+          <li><a class="site-footer__link" href="index.html#reviews">Отзывы</a></li>
+          <li><a class="site-footer__link" href="index.html#faq">Вопросы и ответы</a></li>
+          <li><a class="site-footer__link" href="index.html#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2 class="site-footer__title">Связаться</h2>
+        <address class="site-footer__address">
+          <a href="tel:+74950000000">+7&nbsp;(495)&nbsp;000&#8209;00&#8209;00</a>
+          <a href="mailto:hello@razyom.example">hello@razyom.example</a>
+          <span>Москва, ул. Примерная, 1</span>
+        </address>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom container">
+      <p>© 2026 «Разъём». Учебный проект: контрольная работа №1, Ахметгалиев А. А., ЭФБО-17-25. Магазин вымышленный, заказы не обрабатываются.</p>
+    </div>
+  </footer>
+
+  <a class="to-top" href="#top">↑ Наверх</a>
+
+  <dialog class="modal" id="order-success" aria-labelledby="order-success-title">
+    <div class="modal__inner">
+      <button class="modal__close" type="button" data-dialog-close aria-label="Закрыть окно">×</button>
+      <p class="modal__icon" aria-hidden="true">✓</p>
+      <h2 class="modal__title" id="order-success-title">Заявка принята</h2>
+      <p class="modal__text">Это учебный проект: данные проверены в браузере, но никуда не отправлены и не сохранены.</p>
+      <div class="button-group">
+        <button class="button" type="button" data-dialog-close>Понятно</button>
+        <a class="button button--secondary" href="catalog.html">Вернуться в каталог</a>
+      </div>
+    </div>
+  </dialog>
+</body>
+</html>

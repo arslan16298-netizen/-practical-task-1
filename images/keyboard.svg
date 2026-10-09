@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360"><defs><pattern id="k" x="74" y="122" width="24" height="24" patternUnits="userSpaceOnUse"><rect x="2" y="2" width="20" height="20" rx="4" fill="#d9dde3"/></pattern></defs><ellipse cx="240" cy="326" rx="150" ry="9" fill="#1b1f26" opacity=".08"/>
+<rect x="58" y="108" width="364" height="172" rx="16" fill="#2a2f37"/>
+<rect x="74" y="122" width="336" height="96" fill="url(#k)"/>
+<rect x="76" y="124" width="20" height="20" rx="4" fill="#0b7a55"/>
+<rect x="76" y="244" width="44" height="20" rx="4" fill="#d9dde3"/><rect x="124" y="244" width="44" height="20" rx="4" fill="#d9dde3"/>
+<rect x="172" y="244" width="140" height="20" rx="4" fill="#d9dde3"/>
+<rect x="316" y="244" width="20" height="20" rx="4" fill="#d9dde3"/><rect x="340" y="244" width="20" height="20" rx="4" fill="#d9dde3"/><rect x="364" y="244" width="20" height="20" rx="4" fill="#d9dde3"/><rect x="388" y="244" width="20" height="20" rx="4" fill="#d9dde3"/>
+<rect x="76" y="220" width="332" height="20" rx="4" fill="url(#k)"/>
+</svg>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты — Разъём</title>
+  <meta name="description" content="Телефон, почта, адрес шоурума и часы работы магазина электроники «Разъём». Закажите обратный звонок консультанта.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header">
+    <div class="site-header__inner container">
+      <a class="site-header__logo logo" href="index.html" aria-label="Разъём, на главную">
+        <img class="logo__mark" src="images/logo.svg" alt="" width="30" height="30">
+        <span class="logo__text">Разъём</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Основное меню">
+        <ul class="site-nav__list">
+          <li class="site-nav__item"><a class="site-nav__link" href="index.html">Главная</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="catalog.html">Каталог</a></li>
+          <li class="site-nav__item"><a class="site-nav__link" href="order.html">Оформить заказ</a></li>
+          <li class="site-nav__item"><a class="site-nav__link site-nav__link--active" href="contacts.html" aria-current="page">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <a class="site-header__phone" href="tel:+74950000000">+7&nbsp;(495)&nbsp;000&#8209;00&#8209;00</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Контакты">
+        <ol class="breadcrumbs__list">
+          <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs__item" aria-current="page">Контакты</li>
+        </ol>
+      </nav>
+
+      <header class="page-header">
+        <h1 class="page-header__title">Контакты</h1>
+        <p class="page-header__lead">Ответим на вопросы о товарах, заказах и гарантии. Удобнее всего позвонить или заказать обратный звонок.</p>
+      </header>
+
+      <section aria-labelledby="contacts-list-title">
+        <h2 class="visually-hidden" id="contacts-list-title">Как с нами связаться</h2>
+        <div class="contacts">
+          <article class="contact-card">
+            <h3 class="contact-card__title">Телефон</h3>
+            <p class="contact-card__value"><a href="tel:+74950000000">+7&nbsp;(495)&nbsp;000&#8209;00&#8209;00</a></p>
+            <p class="contact-card__text">Ежедневно с 10:00 до 20:00.</p>
+          </article>
+
+          <article class="contact-card">
+            <h3 class="contact-card__title">Электронная почта</h3>
+            <p class="contact-card__value"><a href="mailto:hello@razyom.example">hello@razyom.example</a></p>
+            <p class="contact-card__text">Отвечаем в течение рабочего дня.</p>
+          </article>
+
+          <article class="contact-card">
+            <h3 class="contact-card__title">Шоурум и самовывоз</h3>
+            <address class="contact-card__value">Москва, ул. Примерная, 1</address>
+            <dl class="schedule">
+              <dt class="schedule__day">Пн–Пт</dt>
+              <dd class="schedule__time">10:00–20:00</dd>
+              <dt class="schedule__day">Сб–Вс</dt>
+              <dd class="schedule__time">11:00–18:00</dd>
+            </dl>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="callback-title">
+        <div class="callback">
+          <div>
+            <h2 class="callback__title" id="callback-title">Перезвоним за 15 минут</h2>
+            <p class="callback__text">Оставьте имя и телефон, и консультант поможет подобрать технику. Если вы уже выбрали товар, сразу <a href="order.html">оформите заказ</a>.</p>
+          </div>
+          <button class="button" type="button" data-dialog-open="callback-dialog">Заказать звонок</button>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="directions-title">
+        <div class="section__header">
+          <h2 class="section__title" id="directions-title">Как добраться</h2>
+        </div>
+        <div class="directions">
+          <div class="directions__item">
+            <h3>На метро</h3>
+            <p class="directions__text">Станция «Примерная», выход №2. От выхода пять минут пешком прямо по улице, вход со двора.</p>
+          </div>
+          <div class="directions__item">
+            <h3>На машине</h3>
+            <p class="directions__text">Бесплатная парковка во дворе на 10 мест. Въезд через шлагбаум, скажите охране, что вы в «Разъём».</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="pages-title">
+        <div class="section__header">
+          <h2 class="section__title" id="pages-title">Полезные страницы</h2>
+        </div>
+        <ul class="button-group link-list">
+          <li><a class="button button--secondary" href="catalog.html">Каталог товаров</a></li>
+          <li><a class="button button--secondary" href="order.html">Оформить заказ</a></li>
+          <li><a class="button button--secondary" href="index.html#faq">Вопросы и ответы</a></li>
+          <li><a class="button button--secondary" href="index.html#advantages">Условия и гарантии</a></li>
+        </ul>
+      </section>
+
+      <div class="section">
+        <p class="notice">Адрес, телефон и почта вымышленные: сайт создан как учебный проект.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner container">
+      <div class="site-footer__brand">
+        <a class="logo" href="index.html" aria-label="Разъём, на главную">
+          <img class="logo__mark" src="images/logo.svg" alt="" width="30" height="30">
+          <span class="logo__text">Разъём</span>
+        </a>
+        <p class="site-footer__about">Электроника и компьютерные аксессуары, которые мы проверили перед продажей.</p>
+      </div>
+
+      <nav class="site-footer__nav" aria-label="Страницы сайта">
+        <h2 class="site-footer__title">Страницы</h2>
+        <ul class="site-footer__list">
+          <li><a class="site-footer__link" href="index.html">Главная</a></li>
+          <li><a class="site-footer__link" href="catalog.html">Каталог</a></li>
+          <li><a class="site-footer__link" href="product.html">Товар недели</a></li>
+          <li><a class="site-footer__link" href="order.html">Оформить заказ</a></li>
+          <li><a class="site-footer__link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <nav class="site-footer__nav" aria-label="Разделы главной страницы">
+        <h2 class="site-footer__title">На главной</h2>
+        <ul class="site-footer__list">
+          <li><a class="site-footer__link" href="index.html#advantages">Преимущества</a></li>
+          <li><a class="site-footer__link" href="index.html#popular">Популярные товары</a></li>
+          <li><a class="site-footer__link" href="index.html#reviews">Отзывы</a></li>
+          <li><a class="site-footer__link" href="index.html#faq">Вопросы и ответы</a></li>
+          <li><a class="site-footer__link" href="index.html#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div>
+        <h2 class="site-footer__title">Связаться</h2>
+        <address class="site-footer__address">
+          <a href="tel:+74950000000">+7&nbsp;(495)&nbsp;000&#8209;00&#8209;00</a>
+          <a href="mailto:hello@razyom.example">hello@razyom.example</a>
+          <span>Москва, ул. Примерная, 1</span>
+        </address>
+      </div>
+    </div>
+
+    <div class="site-footer__bottom container">
+      <p>© 2026 «Разъём». Учебный проект: контрольная работа №1, Ахметгалиев А. А., ЭФБО-17-25. Магазин вымышленный, заказы не обрабатываются.</p>
+    </div>
+  </footer>
+
+  <a class="to-top" href="#top">↑ Наверх</a>
+
+  <dialog class="modal" id="callback-dialog" aria-labelledby="callback-dialog-title">
+    <div class="modal__inner">
+      <button class="modal__close" type="button" data-dialog-close aria-label="Закрыть окно">×</button>
+      <h2 class="modal__title" id="callback-dialog-title">Заказать обратный звонок</h2>
+      <p class="modal__text">Консультант перезвонит в рабочее время.</p>
+
+      <form class="order-form" id="callback-form" method="post" data-validate data-success="callback-success">
+        <fieldset class="order-form__group">
+          <legend class="visually-hidden">Контактные данные</legend>
+          <div class="order-form__field">
+            <label class="order-form__label" for="callback-name">Имя <span class="order-form__required" aria-hidden="true">*</span></label>
+            <input class="order-form__input" type="text" id="callback-name" name="name" autocomplete="name" minlength="2" required aria-describedby="callback-name-error">
+            <p class="order-form__error" id="callback-name-error" aria-live="polite"></p>
+          </div>
+          <div class="order-form__field">
+            <label class="order-form__label" for="callback-phone">Телефон <span class="order-form__required" aria-hidden="true">*</span></label>
+            <input class="order-form__input" type="tel" id="callback-phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 900 000-00-00" pattern="\+?[0-9\s\-\(\)]{10,18}" data-pattern-message="Введите номер из 10–11 цифр, например +7 900 000-00-00." required aria-describedby="callback-phone-error">
+            <p class="order-form__error" id="callback-phone-error" aria-live="polite"></p>
+          </div>
+        </fieldset>
+
+        <div class="order-form__field">
+          <label class="order-form__checkbox" for="callback-agreement">
+            <input type="checkbox" id="callback-agreement" name="agreement" required aria-describedby="callback-agreement-error">
+            <span>Согласен на обработку персональных данных <span class="order-form__required" aria-hidden="true">*</span></span>
+          </label>
+          <p class="order-form__error" id="callback-agreement-error" aria-live="polite"></p>
+        </div>
+
+        <div class="order-form__actions">
+          <button class="button" type="submit">Жду звонка</button>
+          <button class="button button--secondary" type="button" data-dialog-close>Отмена</button>
+        </div>
+      </form>
+    </div>
+  </dialog>
+
+  <dialog class="modal" id="callback-success" aria-labelledby="callback-success-title">
+    <div class="modal__inner">
+      <button class="modal__close" type="button" data-dialog-close aria-label="Закрыть окно">×</button>
+      <p class="modal__icon" aria-hidden="true">✓</p>
+      <h2 class="modal__title" id="callback-success-title">Заявка на звонок принята</h2>
+      <p class="modal__text">Это учебный проект: номер проверен в браузере, но никуда не отправлен и не сохранён.</p>
+      <button class="button" type="button" data-dialog-close>Понятно</button>
+    </div>
+  </dialog>
+</body>
+</html>
